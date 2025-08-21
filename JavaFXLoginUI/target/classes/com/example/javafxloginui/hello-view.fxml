@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafxloginui.HelloController"
+            prefWidth="400" prefHeight="300">
+
+    <VBox alignment="CENTER" spacing="12" layoutX="50" layoutY="50" prefWidth="300">
+        <Label text="Login Form" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <TextField fx:id="usernameField" promptText="Enter Username"
+                   style="-fx-pref-width: 200px;"/>
+
+        <PasswordField fx:id="passwordField" promptText="Enter Password"
+                       style="-fx-pref-width: 200px;"/>
+
+        <Button text="Login" onAction="#handleLogin"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200px;"/>
+    </VBox>
+
+</AnchorPane>
